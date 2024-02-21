@@ -121,6 +121,7 @@ footer p {
 
 .hero-about {
   width: 100%;
+  height: 100vh;
 }
 
 .about-grid {
@@ -213,6 +214,7 @@ footer p {
   .hero-about .main-description {
     margin-right: 30%;
   }
+
   .about-grid-right {
     flex: 12;
   }
