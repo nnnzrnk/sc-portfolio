@@ -41,22 +41,20 @@ body {
 }
 
 footer {
-  display: flex;
-  justify-content: space-evenly;
   background-color: var(--footer-color);
   color: #ffff;
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 3rem;
 }
 
-.social-links {
-  display: flex;
-  max-width: 50%;
-  justify-content: space-between;
+.social-links a {
+  align-items: center;
+  justify-content: center;
+  margin: auto .5rem;
 }
 
 footer p {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
 }
 
@@ -251,7 +249,17 @@ footer p {
   .title-pink {
     font-size: 14px;
   }
-}
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p {
+    margin-top: 1rem;
+    font-size: 10px;
+  }
+} 
+
 
 @media (min-width: 576px) and (max-width: 960px) {
   .hero-text h4 {
@@ -284,12 +292,6 @@ footer p {
     margin: 1rem auto;
   }
 
-  .hero-about {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
   .hero-about-img {
     filter: blur(5px);
   }
@@ -311,5 +313,14 @@ footer p {
   }
   .camera-section img {
     max-width: 20%;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p {
+    margin-top: 1rem;
+    font-size: 14px;
   }
 }

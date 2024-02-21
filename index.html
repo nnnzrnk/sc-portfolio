@@ -21,14 +21,25 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top sticky-sm-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/sc-logo.svg" alt=""></a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#"
+          ><img src="images/sc-logo.svg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
           <div class="navbar-nav">
             <a class="nav-link" href="/index.html">Home</a>
             <a class="nav-link" href="/about.html">About</a>
@@ -38,7 +49,6 @@
         </div>
       </div>
     </nav>
-
 
     <section class="hero">
       <div class="hero-text">
@@ -53,36 +63,42 @@
     </section>
 
     <section class="photos-grid">
-        <div class="row">
-          <img class="col" src="images/pic1.jpg" />
-          <img class="col" src="images/pic2.jpg" />
-          <img class="col" src="images/pic3.jpg" />
-        </div>
-        <div class="row">
-          <img class="col" src="images/pic4.jpg" />
-          <img class="col" src="images/pic5.jpg" />
-          <img class="col" src="images/pic6.jpg" />
-        </div>
-        <div class="row">
-          <img class="col" src="images/pic7.jpg" />
-          <img class="col" src="images/pic8.jpg" />
-          <img class="col" src="images/pic9.jpg" />
-        </div>
-        <div class="row">
-          <img class="col" src="images/pic10.jpg" />
-          <img class="col" src="images/pic11.jpg" />
-          <img class="col" src="images/pic12.jpg" />
-        </div>
+      <div class="row">
+        <img class="col" src="images/pic1.jpg" />
+        <img class="col" src="images/pic2.jpg" />
+        <img class="col" src="images/pic3.jpg" />
+      </div>
+      <div class="row">
+        <img class="col" src="images/pic4.jpg" />
+        <img class="col" src="images/pic5.jpg" />
+        <img class="col" src="images/pic6.jpg" />
+      </div>
+      <div class="row">
+        <img class="col" src="images/pic7.jpg" />
+        <img class="col" src="images/pic8.jpg" />
+        <img class="col" src="images/pic9.jpg" />
+      </div>
+      <div class="row">
+        <img class="col" src="images/pic10.jpg" />
+        <img class="col" src="images/pic11.jpg" />
+        <img class="col" src="images/pic12.jpg" />
+      </div>
     </section>
 
-    <footer>
-      <img src="images/sc-logo.svg" alt="" />
-      <div class="social-links">
-        <a href="#"><img src="images/facebook-logo.svg" alt="" /></a>
-        <a href="#"><img src="images/inst-logo.svg" alt="" /></a>
-        <a href="#"><img src="images/linkedin-logo.svg" alt="" /></a>
+    <footer class="d-flex justify-content-between">
+      <div style="flex: 1.5">
+        <img class="mb-3" src="images/sc-logo.svg" alt="SheCodes logo" />
       </div>
-      <p>© 2021 SheCodes All rights reserved.</p>
+
+      <div style="flex: 1" class="social-links">
+        <a href="#" title="facebook"><img src="images/facebook-logo.svg" alt="facebook-logo" /></a>
+        <a href="#" title="instargam"><img src="images/inst-logo.svg" alt="inst-logo" /></a>
+        <a href="#" title="linkedin"><img src="images/linkedin-logo.svg" alt="linkedin-logo" /></a>
+      </div>
+
+      <div style="flex: 0.8">
+        <p>© 2021 SheCodes All rights reserved.</p>
+      </div>
     </footer>
 
     <script
