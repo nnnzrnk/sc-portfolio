@@ -219,7 +219,6 @@ footer p {
   .photos-grid {
     max-width: 90%;
   }
-
   .photos-grid img {
     margin: 0.5rem auto;
   }
@@ -228,6 +227,12 @@ footer p {
   }
   .hero-about .main-description {
     margin-right: 30%;
+  }
+  .hero-about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .about-grid-right {
@@ -279,6 +284,12 @@ footer p {
     margin: 1rem auto;
   }
 
+  .hero-about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .hero-about-img {
     filter: blur(5px);
   }
