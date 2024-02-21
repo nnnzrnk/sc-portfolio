@@ -2,9 +2,12 @@
   --main-font: "Roboto", sans-serif;
   --font-btn: "Montserrat", sans-serif;
   --bg-color: #212121;
+  --secondary-color: #f65282;
+  --footer-color: #2d2727;
 }
 
-*, *::before,
+*,
+*::before,
 *::after {
   margin: 0;
   padding: 0;
@@ -14,6 +17,7 @@
 body {
   background-color: var(--bg-color);
   font-family: var(--main-font);
+  color: #ffff;
 }
 
 .navbar {
@@ -36,21 +40,19 @@ body {
   background-color: #ffff;
 }
 
-
 footer {
   display: flex;
   justify-content: space-evenly;
-  background-color: #282323;
+  background-color: var(--footer-color);
   color: #ffff;
   width: 100%;
   padding: 1.5rem 2rem;
 }
 
 .social-links {
-  display: inline-flex;
-}
-.social-links a {
-  margin: 0 20%;
+  display: flex;
+  max-width: 50%;
+  justify-content: space-between;
 }
 
 footer p {
@@ -64,11 +66,10 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('/images/hero.jpg');
+  background: url("/images/hero.jpg");
 }
 .hero-text {
   text-align: center;
-  color: #ffff;
 }
 
 .hero-text h4 {
@@ -77,14 +78,15 @@ footer p {
   letter-spacing: 5px;
 }
 
-.hero-text h1 {
+.main-title {
   font-weight: 600;
   margin-top: 25px;
   letter-spacing: 10px;
   font-size: 72px;
+  text-transform: uppercase;
 }
 
-.hero-text p {
+.main-description {
   margin-top: 25px;
   line-height: 30px;
   font-size: 18px;
@@ -106,35 +108,86 @@ footer p {
   color: var(--bg-color);
 }
 
-.photos-grid{
+.photos-grid {
   margin: 6% auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.photos-grid img{
-  margin: 1rem .3rem ;
+.photos-grid img {
+  margin: 1rem 0.3rem;
 }
 
+.hero-about {
+  width: 100%;
+}
+
+.about-grid {
+  display: flex;
+}
+
+.about-grid-left {
+  flex: 1;
+}
+
+.about-grid-right {
+  flex: 1;
+}
+
+.hero-about-img {
+  position: absolute;
+  float: left;
+  z-index: -3;
+}
+
+.title-pink {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.about-social-links {
+  margin: 3rem auto;
+}
+
+.about-social-links a {
+  margin-right: 1.5rem;
+}
+
+.camera-section {
+  margin-top: 1.5rem;
+  background-color: var(--footer-color);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  display: flex;
+  max-width: fit-content;
+}
+.camera-section p {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 2rem;
+  vertical-align: middle;
+}
 
 @media (max-width: 576px) {
   .hero {
-    background: url('/images/hero.sm.jpg');
+    background: url("/images/hero.sm.jpg");
   }
 
   .hero-text h4 {
     font-size: 20px;
     letter-spacing: 1px;
-    
   }
-  .hero-text h1 {
+  .main-title {
     margin-top: 16px;
     font-size: 36px;
     letter-spacing: 4px;
   }
-  
-  .hero-text p {
+
+  .main-description {
     font-size: 10px;
     line-height: 15px;
     margin-top: 1rem;
@@ -147,48 +200,88 @@ footer p {
     border-radius: 50px;
     padding: 14px 32px;
   }
-  .photos-grid{
+  .photos-grid {
     max-width: 90%;
   }
 
-  .photos-grid img{
-    margin: .5rem auto;
+  .photos-grid img {
+    margin: 0.5rem auto;
+  }
+  .hero-about-img {
+    filter: blur(5px);
+  }
+  .hero-about .main-description {
+    margin-right: 30%;
+  }
+  .about-grid-right {
+    flex: 12;
+  }
+  .camera-section {
+    margin-top: 0.5rem;
+    background-color: var(--footer-color);
+    padding: 0.2rem .5rem;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  .camera-section img {
+    max-width: 12%;
+  }
+  .title-pink {
+    font-size: 14px;
   }
 }
 
-@media ( min-width: 576px) and  (max-width: 960px) {
-  .hero {
-    background: url('/images/hero.md.jpg');
-  }
+@media (min-width: 576px) and (max-width: 960px) {
   .hero-text h4 {
     font-size: 22px;
     letter-spacing: 4px;
-    
   }
-  .hero-text h1 {
+  .main-title {
     margin-top: 18px;
     font-size: 54px;
     letter-spacing: 6px;
   }
-  
-  .hero-text p {
+  .main-description {
     font-size: 12px;
     line-height: 20px;
   }
 
-  .button-primary {
+  .btn-primary {
     font-size: 14px;
     letter-spacing: 1px;
     border: none;
     border-radius: 50px;
     padding: 16px 34px;
   }
-  .photos-grid{
+  .photos-grid {
     margin: 10% auto;
     max-width: 90%;
   }
 
-  .photos-grid img{
+  .photos-grid img {
     margin: 1rem auto;
+  }
+
+  .hero-about-img {
+    filter: blur(5px);
+  }
+
+  .hero-about .main-description {
+    margin-right: 30%;
+  }
+  .about-grid-right {
+    flex: 12;
+  }
+
+  .camera-section {
+    margin-top: 0.5rem;
+    background-color: var(--footer-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 12px;
+    
+  }
+  .camera-section img {
+    max-width: 20%;
   }
 }
